@@ -1,50 +1,83 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --third-color: #6b63ff29;
+  --primary-color: #eeddd3;
+  --secondary-color: #fff1e6;
+  --third-color: #bebbfc45;
+  --border-color: #714b4c79;
   --primary-font: "Playfair Display", serif;
   --secondary-font: "Poppins", sans-serif;
+  --third-font: "Nixie One", cursive;
 }
-
+body {
+  background-color: var(--secondary-color);
+}
 h1 {
   font-family: var(--primary-font);
-  font-size: 96px;
+  font-size: 60px;
   font-weight: bold;
-  text-align: center;
-  padding: 10px 0 30px 0;
+  padding: 5px 0 20px 0;
 }
 
 h2 {
-  font-family: var(--secondary-font);
   font-weight: normal;
   font-size: 24px;
-  text-align: center;
-  line-height: 2;
+  text-align: left;
+  font-family: var(--secondary-font);
 }
 p {
-  font-size: 36px;
-  text-align: center;
-  font-family: var(--secondary-font);
-  font-weight: bold;
+  text-align: justify;
 }
 
 .hero {
-  background-color: var(--secondary-color);
-  text-align: center;
-  padding: 40px 30px 100px 30px;
+  background: linear-gradient(110deg, #eeddd3 60%, var(--secondary-color) 60%);
+
+  padding: 130px 30px 100px 30px;
 }
-.navbar-item {
-  background-color: var(--third-color);
-}
+
 .btn-branding {
-  background-color: var(--primary-color);
-  padding: 20px 50px;
-  margin: 20px 0;
-  color: white;
+  background-color: var(--secondary-color);
+  padding: 10px 30px;
+  margin: 30px 0;
+  border: 3px solid var(--border-color);
+  border-radius: 14px;
   font-size: 18px;
+  transition: all 400ms ease-in-out;
 }
 .btn-branding:hover {
-  background-color: var(--third-color);
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+}
+.img-fluid {
+  border-radius: 7px;
+  border: 3px solid var(--secondary-color);
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(40, end);
+}
+.navbar-custom {
+  background-color: var(--secondary-color);
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .btn-branding {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
 }
