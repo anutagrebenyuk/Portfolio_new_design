@@ -133,4 +133,7 @@ p {
     text-align: center;
     padding: 10px;
   }
+  .avatar {
+    margin: 0 auto;
+  }
 }
