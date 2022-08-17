@@ -64,6 +64,11 @@ p {
 .avatar {
   width: 300px;
   height: 300px;
+  margin-left: 70px;
+}
+.contacts p {
+  font-size: 24px;
+  line-height: 1.5;
 }
 /* The typing effect */
 @keyframes typing {
