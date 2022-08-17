@@ -24,6 +24,10 @@ h2 {
   text-align: left;
   font-family: var(--secondary-font);
 }
+h4 {
+  font-size: 48px;
+  font-family: var(--primary-font);
+}
 p {
   text-align: justify;
 }
@@ -85,6 +89,30 @@ p {
   font-size: 30px;
   color: var(--active-link-color);
   margin-left: 20px;
+}
+.contact-box {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--primary-color);
+  padding: 20px 100px;
+  max-width: 70%;
+  margin: 70px auto;
+}
+.contact-icons a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  line-height: 1;
+  color: black;
+  font-size: 20px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: var(--);
+}
+.contact-icons a:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-color: var(--border-color);
 }
 /* The typing effect */
 @keyframes typing {
