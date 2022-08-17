@@ -69,6 +69,11 @@ p {
 .contacts p {
   font-size: 24px;
   line-height: 1.5;
+  font-family: var(--secondary-font);
+}
+.contacts a {
+  text-decoration: none;
+  font-size: 18px;
 }
 /* The typing effect */
 @keyframes typing {
